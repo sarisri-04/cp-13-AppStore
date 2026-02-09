@@ -11,7 +11,7 @@ const TabItem = props => {
   const activeTabBtnClassName = isActive ? 'active-tab-btn' : ''
 
   return (
-    <div className="tab-item-container ">
+    <li className="tab-item-container ">
       <button
         type="button"
         className={`tab-btn ${activeTabBtnClassName}`}
@@ -19,7 +19,7 @@ const TabItem = props => {
       >
         {displayText}
       </button>
-    </div>
+    </li>
   )
 }
 
